@@ -34,7 +34,7 @@ export function SearchBar({ onSelect, onSearch, size = "lg" }: {
       <input
         ref={inputRef}
         className={`w-full bg-[#222] border border-white/10 outline-none placeholder:text-white/30 focus:border-white/25 focus:bg-[#2a2a2a] transition-all ${isLg ? "rounded-2xl py-5 text-xl pl-16 pr-16" : "rounded-xl py-3 text-base pl-11 pr-12"}`}
-        placeholder={isLg ? "¿Qué quieres ver hoy?" : "Buscar..."}
+        placeholder={isLg ? "What do you want to watch?" : "Search..."}
         value={query}
         onChange={(e) => onChange(e.target.value)}
         onKeyDown={(e) => { if (e.key === "Enter") { setShow(false); onSearch(query); } }}
